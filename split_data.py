@@ -6,10 +6,6 @@ logger = logging.getLogger(cfg.logger_app_name)
 
 
 def main():
-    """
-
-    :return:
-    """
     logger.info('El proceso ha comenzado... \n')
     df = load_data(filename=f'{cfg.DATA_FOLDER}/{cfg.INPUT_FILE}', sep=';',
                    decimal=',', dtype=cfg.FEATURES_DTYPES.update(cfg.LABEL_DTYPE))
